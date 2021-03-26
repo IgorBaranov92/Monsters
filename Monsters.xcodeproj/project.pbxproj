@@ -3,52 +3,67 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		783421A5260B738A006FD7C8 /* Probability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783421A4260B738A006FD7C8 /* Probability.swift */; };
+		785BF73C2609EE8500E02309 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BF73B2609EE8500E02309 /* Monster.swift */; };
+		785BF7442609EECE00E02309 /* MyTeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BF7432609EECE00E02309 /* MyTeamTableViewController.swift */; };
+		785BF74C2609EEE000E02309 /* Monsters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BF74B2609EEE000E02309 /* Monsters.swift */; };
+		788AE3F3260DFD0C00754FE5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AE3F2260DFD0C00754FE5 /* LocationManager.swift */; };
+		78B8AA072609F3D900E6863B /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8AA062609F3D900E6863B /* Locations.swift */; };
+		78B8AA0C260A023E00E6863B /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8AA0B260A023E00E6863B /* UIImage+Extensions.swift */; };
+		78B8AA11260A056A00E6863B /* MyTeamButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8AA10260A056A00E6863B /* MyTeamButton.swift */; };
+		78B8AA17260A46C900E6863B /* MyTeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8AA16260A46C900E6863B /* MyTeamTableViewCell.swift */; };
+		78B8AA1F260A4DA000E6863B /* CatchMonsterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8AA1E260A4DA000E6863B /* CatchMonsterViewController.swift */; };
+		78B8AA2B260A548500E6863B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8AA2A260A548500E6863B /* Alert.swift */; };
+		78B8AA33260A56AA00E6863B /* CatchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8AA32260A56AA00E6863B /* CatchButton.swift */; };
+		78B8AA38260B566D00E6863B /* PlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8AA37260B566D00E6863B /* PlusButton.swift */; };
+		78B8AA3D260B589000E6863B /* MinusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8AA3C260B589000E6863B /* MinusButton.swift */; };
+		78B8AA42260B593500E6863B /* LocationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8AA41260B593400E6863B /* LocationButton.swift */; };
+		78B8AA47260B593C00E6863B /* MapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8AA46260B593C00E6863B /* MapButton.swift */; };
 		78EA9DAE2608D45900E716D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA9DAD2608D45900E716D8 /* AppDelegate.swift */; };
-		78EA9DB02608D45900E716D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA9DAF2608D45900E716D8 /* ViewController.swift */; };
-		78EA9DB22608D45900E716D8 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 78EA9DB12608D45900E716D8 /* Experience.rcproject */; };
 		78EA9DB52608D45900E716D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78EA9DB32608D45900E716D8 /* Main.storyboard */; };
 		78EA9DB72608D45A00E716D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78EA9DB62608D45A00E716D8 /* Assets.xcassets */; };
 		78EA9DBA2608D45A00E716D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78EA9DB82608D45A00E716D8 /* LaunchScreen.storyboard */; };
-		78EA9DC52608D45B00E716D8 /* MonstersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA9DC42608D45B00E716D8 /* MonstersTests.swift */; };
-		78EA9DD02608D45B00E716D8 /* MonstersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA9DCF2608D45B00E716D8 /* MonstersUITests.swift */; };
+		78EA9DE72608D56100E716D8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78EA9DE62608D56100E716D8 /* MainViewController.swift */; };
+		CABB2E31E925E43E690A5E0D /* Pods_Monsters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC828FDCFBACDE8542B8AE3A /* Pods_Monsters.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		78EA9DC12608D45B00E716D8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78EA9DA22608D45900E716D8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 78EA9DA92608D45900E716D8;
-			remoteInfo = Monsters;
-		};
-		78EA9DCC2608D45B00E716D8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 78EA9DA22608D45900E716D8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 78EA9DA92608D45900E716D8;
-			remoteInfo = Monsters;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		039DD0474BA63EA1E707A632 /* Pods_Monsters_MonstersUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Monsters_MonstersUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06910361C8DC0CC9F22FE040 /* Pods-MonstersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonstersTests.debug.xcconfig"; path = "Target Support Files/Pods-MonstersTests/Pods-MonstersTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4388A5E15981399587A9DAFD /* Pods-Monsters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monsters.release.xcconfig"; path = "Target Support Files/Pods-Monsters/Pods-Monsters.release.xcconfig"; sourceTree = "<group>"; };
+		783421A4260B738A006FD7C8 /* Probability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Probability.swift; sourceTree = "<group>"; };
+		785BF73B2609EE8500E02309 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		785BF7432609EECE00E02309 /* MyTeamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTeamTableViewController.swift; sourceTree = "<group>"; };
+		785BF74B2609EEE000E02309 /* Monsters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monsters.swift; sourceTree = "<group>"; };
+		788AE3F2260DFD0C00754FE5 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		78B8AA062609F3D900E6863B /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		78B8AA0B260A023E00E6863B /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		78B8AA10260A056A00E6863B /* MyTeamButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTeamButton.swift; sourceTree = "<group>"; };
+		78B8AA16260A46C900E6863B /* MyTeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTeamTableViewCell.swift; sourceTree = "<group>"; };
+		78B8AA1E260A4DA000E6863B /* CatchMonsterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchMonsterViewController.swift; sourceTree = "<group>"; };
+		78B8AA2A260A548500E6863B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		78B8AA32260A56AA00E6863B /* CatchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchButton.swift; sourceTree = "<group>"; };
+		78B8AA37260B566D00E6863B /* PlusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButton.swift; sourceTree = "<group>"; };
+		78B8AA3C260B589000E6863B /* MinusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinusButton.swift; sourceTree = "<group>"; };
+		78B8AA41260B593400E6863B /* LocationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationButton.swift; sourceTree = "<group>"; };
+		78B8AA46260B593C00E6863B /* MapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapButton.swift; sourceTree = "<group>"; };
 		78EA9DAA2608D45900E716D8 /* Monsters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monsters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78EA9DAD2608D45900E716D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		78EA9DAF2608D45900E716D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		78EA9DB12608D45900E716D8 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		78EA9DB42608D45900E716D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78EA9DB62608D45A00E716D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78EA9DB92608D45A00E716D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78EA9DBB2608D45A00E716D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78EA9DC02608D45B00E716D8 /* MonstersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonstersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		78EA9DC42608D45B00E716D8 /* MonstersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonstersTests.swift; sourceTree = "<group>"; };
-		78EA9DC62608D45B00E716D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78EA9DCB2608D45B00E716D8 /* MonstersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonstersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		78EA9DCF2608D45B00E716D8 /* MonstersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonstersUITests.swift; sourceTree = "<group>"; };
-		78EA9DD12608D45B00E716D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78EA9DE62608D56100E716D8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		957A84DCF3002FE854855EC0 /* Pods-Monsters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monsters.debug.xcconfig"; path = "Target Support Files/Pods-Monsters/Pods-Monsters.debug.xcconfig"; sourceTree = "<group>"; };
+		A32D3A920A76FAD1A2CF8577 /* Pods-MonstersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonstersTests.release.xcconfig"; path = "Target Support Files/Pods-MonstersTests/Pods-MonstersTests.release.xcconfig"; sourceTree = "<group>"; };
+		ADAC72CB551F7FED1C9E4D1C /* Pods-Monsters-MonstersUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monsters-MonstersUITests.debug.xcconfig"; path = "Target Support Files/Pods-Monsters-MonstersUITests/Pods-Monsters-MonstersUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D590C23E54D50DEC8566A567 /* Pods_MonstersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonstersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E82FE538C2A527F9420A2111 /* Pods-Monsters-MonstersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monsters-MonstersUITests.release.xcconfig"; path = "Target Support Files/Pods-Monsters-MonstersUITests/Pods-Monsters-MonstersUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EC828FDCFBACDE8542B8AE3A /* Pods_Monsters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Monsters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,33 +71,76 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78EA9DBD2608D45B00E716D8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78EA9DC82608D45B00E716D8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				CABB2E31E925E43E690A5E0D /* Pods_Monsters.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		785BF7342609E62800E02309 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				78EA9DAD2608D45900E716D8 /* AppDelegate.swift */,
+				78B8AA0B260A023E00E6863B /* UIImage+Extensions.swift */,
+				78EA9DB62608D45A00E716D8 /* Assets.xcassets */,
+				78EA9DB82608D45A00E716D8 /* LaunchScreen.storyboard */,
+				78EA9DBB2608D45A00E716D8 /* Info.plist */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		785BF7402609EEAC00E02309 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				785BF73B2609EE8500E02309 /* Monster.swift */,
+				785BF74B2609EEE000E02309 /* Monsters.swift */,
+				78B8AA062609F3D900E6863B /* Locations.swift */,
+				783421A4260B738A006FD7C8 /* Probability.swift */,
+				788AE3F2260DFD0C00754FE5 /* LocationManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		785BF7412609EEB000E02309 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78B8AA10260A056A00E6863B /* MyTeamButton.swift */,
+				78B8AA32260A56AA00E6863B /* CatchButton.swift */,
+				78B8AA2A260A548500E6863B /* Alert.swift */,
+				78B8AA46260B593C00E6863B /* MapButton.swift */,
+				78B8AA37260B566D00E6863B /* PlusButton.swift */,
+				78B8AA3C260B589000E6863B /* MinusButton.swift */,
+				78B8AA41260B593400E6863B /* LocationButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		785BF7422609EEB600E02309 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				78EA9DE62608D56100E716D8 /* MainViewController.swift */,
+				78B8AA1E260A4DA000E6863B /* CatchMonsterViewController.swift */,
+				785BF7432609EECE00E02309 /* MyTeamTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		78B8AA15260A46B200E6863B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				78B8AA16260A46C900E6863B /* MyTeamTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		78EA9DA12608D45900E716D8 = {
 			isa = PBXGroup;
 			children = (
 				78EA9DAC2608D45900E716D8 /* Monsters */,
-				78EA9DC32608D45B00E716D8 /* MonstersTests */,
-				78EA9DCE2608D45B00E716D8 /* MonstersUITests */,
 				78EA9DAB2608D45900E716D8 /* Products */,
+				8A26C79948665A6F3CC458CA /* Pods */,
+				BFCC19E5BD48A67430B0A36B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,8 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				78EA9DAA2608D45900E716D8 /* Monsters.app */,
-				78EA9DC02608D45B00E716D8 /* MonstersTests.xctest */,
-				78EA9DCB2608D45B00E716D8 /* MonstersUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,33 +155,37 @@
 		78EA9DAC2608D45900E716D8 /* Monsters */ = {
 			isa = PBXGroup;
 			children = (
-				78EA9DAD2608D45900E716D8 /* AppDelegate.swift */,
-				78EA9DAF2608D45900E716D8 /* ViewController.swift */,
-				78EA9DB12608D45900E716D8 /* Experience.rcproject */,
 				78EA9DB32608D45900E716D8 /* Main.storyboard */,
-				78EA9DB62608D45A00E716D8 /* Assets.xcassets */,
-				78EA9DB82608D45A00E716D8 /* LaunchScreen.storyboard */,
-				78EA9DBB2608D45A00E716D8 /* Info.plist */,
+				785BF7402609EEAC00E02309 /* Model */,
+				78B8AA15260A46B200E6863B /* Cell */,
+				785BF7412609EEB000E02309 /* View */,
+				785BF7422609EEB600E02309 /* Controller */,
+				785BF7342609E62800E02309 /* Misc */,
 			);
 			path = Monsters;
 			sourceTree = "<group>";
 		};
-		78EA9DC32608D45B00E716D8 /* MonstersTests */ = {
+		8A26C79948665A6F3CC458CA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				78EA9DC42608D45B00E716D8 /* MonstersTests.swift */,
-				78EA9DC62608D45B00E716D8 /* Info.plist */,
+				957A84DCF3002FE854855EC0 /* Pods-Monsters.debug.xcconfig */,
+				4388A5E15981399587A9DAFD /* Pods-Monsters.release.xcconfig */,
+				ADAC72CB551F7FED1C9E4D1C /* Pods-Monsters-MonstersUITests.debug.xcconfig */,
+				E82FE538C2A527F9420A2111 /* Pods-Monsters-MonstersUITests.release.xcconfig */,
+				06910361C8DC0CC9F22FE040 /* Pods-MonstersTests.debug.xcconfig */,
+				A32D3A920A76FAD1A2CF8577 /* Pods-MonstersTests.release.xcconfig */,
 			);
-			path = MonstersTests;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		78EA9DCE2608D45B00E716D8 /* MonstersUITests */ = {
+		BFCC19E5BD48A67430B0A36B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				78EA9DCF2608D45B00E716D8 /* MonstersUITests.swift */,
-				78EA9DD12608D45B00E716D8 /* Info.plist */,
+				EC828FDCFBACDE8542B8AE3A /* Pods_Monsters.framework */,
+				039DD0474BA63EA1E707A632 /* Pods_Monsters_MonstersUITests.framework */,
+				D590C23E54D50DEC8566A567 /* Pods_MonstersTests.framework */,
 			);
-			path = MonstersUITests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,9 +195,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78EA9DD42608D45B00E716D8 /* Build configuration list for PBXNativeTarget "Monsters" */;
 			buildPhases = (
+				D3130B8D5491DB989B4DB9ED /* [CP] Check Pods Manifest.lock */,
 				78EA9DA62608D45900E716D8 /* Sources */,
 				78EA9DA72608D45900E716D8 /* Frameworks */,
 				78EA9DA82608D45900E716D8 /* Resources */,
+				DD83C4E1E2AD0551B733DFF4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -147,42 +209,6 @@
 			productName = Monsters;
 			productReference = 78EA9DAA2608D45900E716D8 /* Monsters.app */;
 			productType = "com.apple.product-type.application";
-		};
-		78EA9DBF2608D45B00E716D8 /* MonstersTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 78EA9DD72608D45B00E716D8 /* Build configuration list for PBXNativeTarget "MonstersTests" */;
-			buildPhases = (
-				78EA9DBC2608D45B00E716D8 /* Sources */,
-				78EA9DBD2608D45B00E716D8 /* Frameworks */,
-				78EA9DBE2608D45B00E716D8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				78EA9DC22608D45B00E716D8 /* PBXTargetDependency */,
-			);
-			name = MonstersTests;
-			productName = MonstersTests;
-			productReference = 78EA9DC02608D45B00E716D8 /* MonstersTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		78EA9DCA2608D45B00E716D8 /* MonstersUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 78EA9DDA2608D45B00E716D8 /* Build configuration list for PBXNativeTarget "MonstersUITests" */;
-			buildPhases = (
-				78EA9DC72608D45B00E716D8 /* Sources */,
-				78EA9DC82608D45B00E716D8 /* Frameworks */,
-				78EA9DC92608D45B00E716D8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				78EA9DCD2608D45B00E716D8 /* PBXTargetDependency */,
-			);
-			name = MonstersUITests;
-			productName = MonstersUITests;
-			productReference = 78EA9DCB2608D45B00E716D8 /* MonstersUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -195,14 +221,6 @@
 				TargetAttributes = {
 					78EA9DA92608D45900E716D8 = {
 						CreatedOnToolsVersion = 12.4;
-					};
-					78EA9DBF2608D45B00E716D8 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 78EA9DA92608D45900E716D8;
-					};
-					78EA9DCA2608D45B00E716D8 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 78EA9DA92608D45900E716D8;
 					};
 				};
 			};
@@ -220,8 +238,6 @@
 			projectRoot = "";
 			targets = (
 				78EA9DA92608D45900E716D8 /* Monsters */,
-				78EA9DBF2608D45B00E716D8 /* MonstersTests */,
-				78EA9DCA2608D45B00E716D8 /* MonstersUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -237,63 +253,77 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78EA9DBE2608D45B00E716D8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78EA9DC92608D45B00E716D8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D3130B8D5491DB989B4DB9ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Monsters-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD83C4E1E2AD0551B733DFF4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Monsters/Pods-Monsters-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Monsters/Pods-Monsters-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Monsters/Pods-Monsters-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		78EA9DA62608D45900E716D8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78EA9DB02608D45900E716D8 /* ViewController.swift in Sources */,
+				78B8AA42260B593500E6863B /* LocationButton.swift in Sources */,
+				78B8AA3D260B589000E6863B /* MinusButton.swift in Sources */,
+				78B8AA17260A46C900E6863B /* MyTeamTableViewCell.swift in Sources */,
+				78B8AA2B260A548500E6863B /* Alert.swift in Sources */,
+				78B8AA47260B593C00E6863B /* MapButton.swift in Sources */,
+				78B8AA072609F3D900E6863B /* Locations.swift in Sources */,
+				78B8AA1F260A4DA000E6863B /* CatchMonsterViewController.swift in Sources */,
 				78EA9DAE2608D45900E716D8 /* AppDelegate.swift in Sources */,
-				78EA9DB22608D45900E716D8 /* Experience.rcproject in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78EA9DBC2608D45B00E716D8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78EA9DC52608D45B00E716D8 /* MonstersTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		78EA9DC72608D45B00E716D8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78EA9DD02608D45B00E716D8 /* MonstersUITests.swift in Sources */,
+				788AE3F3260DFD0C00754FE5 /* LocationManager.swift in Sources */,
+				785BF73C2609EE8500E02309 /* Monster.swift in Sources */,
+				78B8AA0C260A023E00E6863B /* UIImage+Extensions.swift in Sources */,
+				785BF7442609EECE00E02309 /* MyTeamTableViewController.swift in Sources */,
+				78EA9DE72608D56100E716D8 /* MainViewController.swift in Sources */,
+				78B8AA11260A056A00E6863B /* MyTeamButton.swift in Sources */,
+				785BF74C2609EEE000E02309 /* Monsters.swift in Sources */,
+				78B8AA33260A56AA00E6863B /* CatchButton.swift in Sources */,
+				78B8AA38260B566D00E6863B /* PlusButton.swift in Sources */,
+				783421A5260B738A006FD7C8 /* Probability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		78EA9DC22608D45B00E716D8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 78EA9DA92608D45900E716D8 /* Monsters */;
-			targetProxy = 78EA9DC12608D45B00E716D8 /* PBXContainerItemProxy */;
-		};
-		78EA9DCD2608D45B00E716D8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 78EA9DA92608D45900E716D8 /* Monsters */;
-			targetProxy = 78EA9DCC2608D45B00E716D8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		78EA9DB32608D45900E716D8 /* Main.storyboard */ = {
@@ -366,7 +396,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +451,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -433,12 +463,13 @@
 		};
 		78EA9DD52608D45B00E716D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 957A84DCF3002FE854855EC0 /* Pods-Monsters.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36UX7SKY3J;
-				INFOPLIST_FILE = Monsters/Info.plist;
+				INFOPLIST_FILE = Monsters/Misc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,12 +483,13 @@
 		};
 		78EA9DD62608D45B00E716D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4388A5E15981399587A9DAFD /* Pods-Monsters.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36UX7SKY3J;
-				INFOPLIST_FILE = Monsters/Info.plist;
+				INFOPLIST_FILE = Monsters/Misc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,90 +498,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		78EA9DD82608D45B00E716D8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 36UX7SKY3J;
-				INFOPLIST_FILE = MonstersTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.skillbox.home.MonstersTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Monsters.app/Monsters";
-			};
-			name = Debug;
-		};
-		78EA9DD92608D45B00E716D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 36UX7SKY3J;
-				INFOPLIST_FILE = MonstersTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.skillbox.home.MonstersTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Monsters.app/Monsters";
-			};
-			name = Release;
-		};
-		78EA9DDB2608D45B00E716D8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 36UX7SKY3J;
-				INFOPLIST_FILE = MonstersUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.skillbox.home.MonstersUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Monsters;
-			};
-			name = Debug;
-		};
-		78EA9DDC2608D45B00E716D8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 36UX7SKY3J;
-				INFOPLIST_FILE = MonstersUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.skillbox.home.MonstersUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Monsters;
 			};
 			name = Release;
 		};
@@ -570,24 +518,6 @@
 			buildConfigurations = (
 				78EA9DD52608D45B00E716D8 /* Debug */,
 				78EA9DD62608D45B00E716D8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		78EA9DD72608D45B00E716D8 /* Build configuration list for PBXNativeTarget "MonstersTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				78EA9DD82608D45B00E716D8 /* Debug */,
-				78EA9DD92608D45B00E716D8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		78EA9DDA2608D45B00E716D8 /* Build configuration list for PBXNativeTarget "MonstersUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				78EA9DDB2608D45B00E716D8 /* Debug */,
-				78EA9DDC2608D45B00E716D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

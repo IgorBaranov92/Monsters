@@ -1,26 +1,340 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14865" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vgv-bs-40f">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14819"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ARView-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Main View Controller-->
+        <scene sceneID="oMA-cm-MTm">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="ARView" customClass="ViewController" customModule="target" customModuleProvider="target" sceneMemberID="viewController">
-                    <arView key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="Vgv-bs-40f" customClass="MainViewController" customModule="Monsters" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ltc-3M-njF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </arView>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bih-w0-PU8" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xt1-lm-7zK" customClass="MyTeamButton" customModule="Monsters" customModuleProvider="target">
+                                <rect key="frame" x="40" y="806" width="334" height="36"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Моя команда">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.053090991070000003" green="0.0" blue="0.1646564368" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="iPG-zG-YyF" kind="presentation" identifier="myTeamSegue" modalPresentationStyle="fullScreen" id="f2Z-l8-xHh"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PqL-fw-ZmA">
+                                <rect key="frame" x="354" y="373" width="50" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2M-Vx-rfB" customClass="PlusButton" customModule="Monsters" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="G2M-Vx-rfB" secondAttribute="height" multiplier="1:1" id="ozm-6Z-3WF"/>
+                                            <constraint firstAttribute="width" constant="50" id="ufj-Zj-kdt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.053090991070000003" green="0.0" blue="0.1646564368" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="pathColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="zoomIn:" destination="Vgv-bs-40f" eventType="touchUpInside" id="DTo-Im-QBG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AfO-bI-fs6" customClass="MinusButton" customModule="Monsters" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.053090991070000003" green="0.0" blue="0.1646564368" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="pathColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="zoomOut:" destination="Vgv-bs-40f" eventType="touchUpInside" id="Zd2-GF-GZ4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8s0-rD-MmK" customClass="LocationButton" customModule="Monsters" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="100" width="50" height="50"/>
+                                        <state key="normal">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="pathColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.053090991070000003" green="0.0" blue="0.1646564368" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="centerAtMe:" destination="Vgv-bs-40f" eventType="touchUpInside" id="5cI-Ws-FM4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5YC-Vs-Ufh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5YC-Vs-Ufh" firstAttribute="trailing" secondItem="PqL-fw-ZmA" secondAttribute="trailing" constant="10" id="2hz-Hu-yfv"/>
+                            <constraint firstItem="PqL-fw-ZmA" firstAttribute="centerY" secondItem="ltc-3M-njF" secondAttribute="centerY" id="3Kv-CE-YmU"/>
+                            <constraint firstAttribute="trailing" secondItem="Xt1-lm-7zK" secondAttribute="trailing" constant="40" id="6qf-61-4mT"/>
+                            <constraint firstItem="5YC-Vs-Ufh" firstAttribute="trailing" secondItem="bih-w0-PU8" secondAttribute="trailing" id="BrS-DU-6V4"/>
+                            <constraint firstItem="Xt1-lm-7zK" firstAttribute="leading" secondItem="5YC-Vs-Ufh" secondAttribute="leading" constant="40" id="ERL-GL-0CI"/>
+                            <constraint firstAttribute="bottom" secondItem="bih-w0-PU8" secondAttribute="bottom" id="F1x-Xa-VW8"/>
+                            <constraint firstItem="5YC-Vs-Ufh" firstAttribute="bottom" secondItem="Xt1-lm-7zK" secondAttribute="bottom" constant="20" id="JXQ-Zx-ON5"/>
+                            <constraint firstItem="bih-w0-PU8" firstAttribute="leading" secondItem="5YC-Vs-Ufh" secondAttribute="leading" id="MNU-6X-irk"/>
+                            <constraint firstItem="bih-w0-PU8" firstAttribute="top" secondItem="ltc-3M-njF" secondAttribute="top" id="Sx1-wo-3f1"/>
+                        </constraints>
+                    </view>
                     <connections>
-                        <outlet property="arView" destination="8bC-Xf-vdC" id="TPV-4x-avp"/>
+                        <outlet property="googleMap" destination="bih-w0-PU8" id="aaW-5G-IVL"/>
+                        <segue destination="Fhw-Qb-g7Y" kind="presentation" identifier="catchMonsterVC" modalPresentationStyle="fullScreen" id="Yry-lZ-4tr"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lhV-wz-aCP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="134"/>
+            <point key="canvasLocation" x="663" y="49"/>
+        </scene>
+        <!--Catch Monster View Controller-->
+        <scene sceneID="1jD-v4-S1Q">
+            <objects>
+                <viewController id="Fhw-Qb-g7Y" customClass="CatchMonsterViewController" customModule="Monsters" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JMn-zK-nji">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9LV-Wi-AB5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9i-US-QLW" customClass="CatchButton" customModule="Monsters" customModuleProvider="target">
+                                <rect key="frame" x="20" y="802" width="374" height="44"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="23"/>
+                                <state key="normal" title="Попробовать поймать">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.053090991066137815" green="0.0" blue="0.1646564368045691" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="catchIfPossible" destination="Fhw-Qb-g7Y" eventType="touchUpInside" id="pQK-Qd-lro"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAF-M1-iVM">
+                                <rect key="frame" x="207" y="794" width="0.0" height="0.0"/>
+                                <color key="backgroundColor" red="0.053090991070000003" green="0.0" blue="0.1646564368" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MLE-HR-Y9S"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MLE-HR-Y9S" firstAttribute="trailing" secondItem="e9i-US-QLW" secondAttribute="trailing" constant="20" id="HKW-RO-d2m"/>
+                            <constraint firstItem="e9i-US-QLW" firstAttribute="leading" secondItem="MLE-HR-Y9S" secondAttribute="leading" constant="20" id="Q4i-6D-gu8"/>
+                            <constraint firstItem="VAF-M1-iVM" firstAttribute="centerX" secondItem="JMn-zK-nji" secondAttribute="centerX" id="Rdy-yg-d6r"/>
+                            <constraint firstAttribute="bottom" secondItem="9LV-Wi-AB5" secondAttribute="bottom" id="X6n-Z6-ytR"/>
+                            <constraint firstItem="e9i-US-QLW" firstAttribute="top" secondItem="VAF-M1-iVM" secondAttribute="bottom" constant="8" symbolic="YES" id="YGo-5X-9vg"/>
+                            <constraint firstItem="MLE-HR-Y9S" firstAttribute="trailing" secondItem="9LV-Wi-AB5" secondAttribute="trailing" id="bnW-Y7-P7y"/>
+                            <constraint firstItem="e9i-US-QLW" firstAttribute="bottom" secondItem="MLE-HR-Y9S" secondAttribute="bottom" constant="-16" id="cS3-jb-Goc"/>
+                            <constraint firstItem="9LV-Wi-AB5" firstAttribute="top" secondItem="JMn-zK-nji" secondAttribute="top" id="dxE-sn-tLs"/>
+                            <constraint firstItem="9LV-Wi-AB5" firstAttribute="leading" secondItem="MLE-HR-Y9S" secondAttribute="leading" id="lmC-di-Pv6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="arView" destination="9LV-Wi-AB5" id="BTd-b6-Dcv"/>
+                        <outlet property="catchButton" destination="e9i-US-QLW" id="jbC-DZ-PMV"/>
+                        <outlet property="monsterInfoLabel" destination="VAF-M1-iVM" id="WUT-Qf-Xhi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gAY-zM-UFG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1618.840579710145" y="-724.55357142857144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X0Y-Xp-7VB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iPG-zG-YyF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D0R-8X-fZH">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3bo-Qz-lBz" kind="relationship" relationship="rootViewController" id="Plj-df-ljh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WkL-JX-dLZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1618.840579710145" y="26.785714285714285"/>
+        </scene>
+        <!--Моя команда-->
+        <scene sceneID="KtP-nZ-wUo">
+            <objects>
+                <viewController id="3bo-Qz-lBz" customClass="MyTeamViewController" customModule="Monsters" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b9E-5E-rDy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Jp1-3b-R52">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы еще не поймали монстров в свою команду" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fsg-Gr-OVa">
+                                <rect key="frame" x="16" y="436.5" width="382" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="150" estimatedRowHeight="150" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Zc2-pZ-6jE">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myTeamCell" id="FNQ-1l-A2O" customClass="MyTeamTableViewCell" customModule="Monsters" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="150"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FNQ-1l-A2O" id="JmJ-0j-5hh">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="APJ-5t-NnD">
+                                                    <rect key="frame" x="30" y="21" width="80" height="108"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="k6g-Om-yFV"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mKz-O9-Jw2">
+                                                    <rect key="frame" x="118" y="21" width="60.5" height="77"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кано" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7md-Dd-u5u">
+                                                            <rect key="frame" x="0.0" y="0.0" width="60.5" height="34.5"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pe-WQ-egU">
+                                                            <rect key="frame" x="0.0" y="42.5" width="29" height="34.5"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="APJ-5t-NnD" secondAttribute="bottom" constant="10" id="0fg-8V-GhI"/>
+                                                <constraint firstItem="APJ-5t-NnD" firstAttribute="leading" secondItem="JmJ-0j-5hh" secondAttribute="leadingMargin" constant="10" id="LOy-gr-2hi"/>
+                                                <constraint firstItem="mKz-O9-Jw2" firstAttribute="leading" secondItem="APJ-5t-NnD" secondAttribute="trailing" constant="8" symbolic="YES" id="TUi-eN-dep"/>
+                                                <constraint firstItem="APJ-5t-NnD" firstAttribute="top" secondItem="JmJ-0j-5hh" secondAttribute="topMargin" constant="10" id="Ydn-Gt-Ibb"/>
+                                                <constraint firstItem="mKz-O9-Jw2" firstAttribute="top" secondItem="JmJ-0j-5hh" secondAttribute="topMargin" constant="10" id="jw2-hu-Mbd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="levelLabel" destination="6pe-WQ-egU" id="Bts-Ld-pge"/>
+                                            <outlet property="monsterImageView" destination="APJ-5t-NnD" id="JiT-F9-dhh"/>
+                                            <outlet property="nameLabel" destination="7md-Dd-u5u" id="KDU-t3-sDX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3bo-Qz-lBz" id="EzV-9s-z7b"/>
+                                    <outlet property="delegate" destination="3bo-Qz-lBz" id="zhF-kM-TMA"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="r5c-oV-mqH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zc2-pZ-6jE" firstAttribute="top" secondItem="r5c-oV-mqH" secondAttribute="top" id="0Cm-AK-Nga"/>
+                            <constraint firstItem="Jp1-3b-R52" firstAttribute="leading" secondItem="r5c-oV-mqH" secondAttribute="leading" id="44n-sd-ceH"/>
+                            <constraint firstItem="r5c-oV-mqH" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="fsg-Gr-OVa" secondAttribute="trailing" constant="16" id="CNy-B7-29x"/>
+                            <constraint firstItem="fsg-Gr-OVa" firstAttribute="centerX" secondItem="b9E-5E-rDy" secondAttribute="centerX" id="Ckf-jO-CxS"/>
+                            <constraint firstItem="fsg-Gr-OVa" firstAttribute="leading" secondItem="r5c-oV-mqH" secondAttribute="leading" constant="16" id="M1B-pK-9wh"/>
+                            <constraint firstItem="r5c-oV-mqH" firstAttribute="trailing" secondItem="Zc2-pZ-6jE" secondAttribute="trailing" id="QdW-kS-w5N"/>
+                            <constraint firstItem="r5c-oV-mqH" firstAttribute="bottom" secondItem="Jp1-3b-R52" secondAttribute="bottom" id="RMF-9w-aVH"/>
+                            <constraint firstItem="fsg-Gr-OVa" firstAttribute="centerY" secondItem="b9E-5E-rDy" secondAttribute="centerY" id="UjI-JI-VQC"/>
+                            <constraint firstItem="r5c-oV-mqH" firstAttribute="trailing" secondItem="Jp1-3b-R52" secondAttribute="trailing" id="VNu-gh-NIL"/>
+                            <constraint firstItem="Zc2-pZ-6jE" firstAttribute="leading" secondItem="r5c-oV-mqH" secondAttribute="leading" id="jjh-vS-fwD"/>
+                            <constraint firstItem="Jp1-3b-R52" firstAttribute="top" secondItem="r5c-oV-mqH" secondAttribute="top" id="v88-40-mI5"/>
+                            <constraint firstItem="r5c-oV-mqH" firstAttribute="bottom" secondItem="Zc2-pZ-6jE" secondAttribute="bottom" id="yJw-Bd-V46"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Моя команда" id="bVa-V1-GQ3">
+                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="zmz-t1-tHJ">
+                            <connections>
+                                <action selector="dismiss:" destination="3bo-Qz-lBz" id="NRx-4r-O8K"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="label" destination="fsg-Gr-OVa" id="7B9-Cn-9KB"/>
+                        <outlet property="tableView" destination="Zc2-pZ-6jE" id="PCG-l8-Qfh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FOg-n1-HCp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2434.7826086956525" y="48.883928571428569"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="8s0-rD-MmK">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="AfO-bI-fs6">
+            <size key="intrinsicContentSize" width="30" height="60"/>
+        </designable>
+        <designable name="G2M-Vx-rfB">
+            <size key="intrinsicContentSize" width="30" height="60"/>
+        </designable>
+        <designable name="Xt1-lm-7zK">
+            <size key="intrinsicContentSize" width="108" height="36"/>
+        </designable>
+        <designable name="e9i-US-QLW">
+            <size key="intrinsicContentSize" width="243" height="44"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="1" width="1608" height="2144"/>
+        <image name="background" width="375" height="812"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
