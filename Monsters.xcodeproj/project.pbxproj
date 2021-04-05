@@ -11,6 +11,7 @@
 		785BF73C2609EE8500E02309 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BF73B2609EE8500E02309 /* Monster.swift */; };
 		785BF7442609EECE00E02309 /* MyTeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BF7432609EECE00E02309 /* MyTeamTableViewController.swift */; };
 		785BF74C2609EEE000E02309 /* Monsters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785BF74B2609EEE000E02309 /* Monsters.swift */; };
+		7867EDF5261860F800E7F54B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7867EDF4261860F800E7F54B /* Settings.swift */; };
 		788AE3F3260DFD0C00754FE5 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788AE3F2260DFD0C00754FE5 /* LocationManager.swift */; };
 		78B8AA072609F3D900E6863B /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8AA062609F3D900E6863B /* Locations.swift */; };
 		78B8AA0C260A023E00E6863B /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B8AA0B260A023E00E6863B /* UIImage+Extensions.swift */; };
@@ -39,6 +40,7 @@
 		785BF73B2609EE8500E02309 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
 		785BF7432609EECE00E02309 /* MyTeamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTeamTableViewController.swift; sourceTree = "<group>"; };
 		785BF74B2609EEE000E02309 /* Monsters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monsters.swift; sourceTree = "<group>"; };
+		7867EDF4261860F800E7F54B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		788AE3F2260DFD0C00754FE5 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		78B8AA062609F3D900E6863B /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 		78B8AA0B260A023E00E6863B /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				78EA9DAD2608D45900E716D8 /* AppDelegate.swift */,
+				7867EDF4261860F800E7F54B /* Settings.swift */,
 				78B8AA0B260A023E00E6863B /* UIImage+Extensions.swift */,
 				78EA9DB62608D45A00E716D8 /* Assets.xcassets */,
 				78EA9DB82608D45A00E716D8 /* LaunchScreen.storyboard */,
@@ -107,11 +110,11 @@
 			children = (
 				78B8AA10260A056A00E6863B /* MyTeamButton.swift */,
 				78B8AA32260A56AA00E6863B /* CatchButton.swift */,
-				78B8AA2A260A548500E6863B /* Alert.swift */,
 				78B8AA46260B593C00E6863B /* MapButton.swift */,
 				78B8AA37260B566D00E6863B /* PlusButton.swift */,
 				78B8AA3C260B589000E6863B /* MinusButton.swift */,
 				78B8AA41260B593400E6863B /* LocationButton.swift */,
+				78B8AA2A260A548500E6863B /* Alert.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				78B8AA33260A56AA00E6863B /* CatchButton.swift in Sources */,
 				78B8AA38260B566D00E6863B /* PlusButton.swift in Sources */,
 				783421A5260B738A006FD7C8 /* Probability.swift in Sources */,
+				7867EDF5261860F800E7F54B /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

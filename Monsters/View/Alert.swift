@@ -38,4 +38,23 @@ class Alert {
         vc.present(alert, animated: true)
     }
     
+    static func locationErrorIn(_ vc: UIViewController,completion:@escaping (() -> Void )) -> UIAlertController? {
+        let alert = UIAlertController(title: "Ошибка", message: "Не можем Вас найти, включите геолокацию", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Перейти в настройки", style: .cancel) {  (action) in
+            alert.dismiss(animated: true) { completion()}
+        }
+        alert.addAction(action)
+        vc.present(alert, animated: true)
+        return alert
+    }
+    
+    static func cameraErrorIn(_ vc: UIViewController,completion:@escaping (() -> Void ))  {
+        let alert = UIAlertController(title: "Ошибка", message: "Включите камеру для поимки монстра", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Перейти в настройки", style: .cancel) {  (action) in
+            alert.dismiss(animated: true) { completion()}
+        }
+        alert.addAction(action)
+        vc.present(alert, animated: true)
+    }
+    
 }

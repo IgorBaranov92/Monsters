@@ -3,6 +3,8 @@ import CoreLocation
 
 class LocationManager: CLLocationManager {
     
+    var foundLocation = false
+    
     init(delegate: CLLocationManagerDelegate) {
         super.init()
         requestWhenInUseAuthorization()

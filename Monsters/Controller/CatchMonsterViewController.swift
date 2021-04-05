@@ -14,15 +14,21 @@ class CatchMonsterViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let configuration = ARWorldTrackingConfiguration()
-        arView.session.run(configuration)
-        setup()
+        switch AVCaptureDevice.authorizationStatus(for: .video) {
+            case .authorized:
+                arView.session.run(ARWorldTrackingConfiguration())
+                setup()
+            case .notDetermined, .denied, .restricted:
+                Alert.cameraErrorIn(self, completion: { Settings.open() })
+        default:break
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         arView.session.pause()
     }
+    
     
     @IBAction func catchIfPossible() {
         catchMonster()
@@ -50,12 +56,13 @@ class CatchMonsterViewController: UIViewController {
     }
     
     private func setup() {
-        if let image = UIImage(named: "\(monster.name)")?.scaled {
+        if let monster = monster,
+           let image = UIImage(named: "\(monster.name)")?.scaled {
             let node = SCNNode(geometry: SCNPlane(width: 0.05, height: 0.05))
             node.geometry?.firstMaterial?.diffuse.contents = image
             arView.scene.rootNode.addChildNode(node)
-        }
-        monsterInfoLabel.text = "\(monster.name)\nУровень: \(monster.level)"
+            monsterInfoLabel.text = "\(monster.name)\nУровень: \(monster.level)"
+        } else { Alert.failureIn(self) { [unowned self] in done() } }
     }
     
     
